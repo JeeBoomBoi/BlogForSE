@@ -7,6 +7,7 @@ const router = require('./routes/blogRoutes');
 
 // express app
 const app = express();
+const port = process.env.PORT || 3000
 
 // connect to database
 const dbURI = 'mongodb+srv://jeethendra:0lebaVUwNsovyL76@boisx4-blog.4g8up.mongodb.net/BOISX4?retryWrites=true&w=majority'
@@ -18,7 +19,7 @@ moongoose.connect(dbURI, { useNewUrlParser: true ,  useUnifiedTopology: true })
 app.set("view engine", "ejs");
 
 // listen for requests
-app.listen(3000);
+app.listen(port);
 
 // middleware and static files
 app.use(express.static('public'));

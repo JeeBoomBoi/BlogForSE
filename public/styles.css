@@ -78,6 +78,10 @@
       position: relative;
     }
 
+    .details li {
+      margin-left: 25px;
+    }
+
     .delete {
       position: absolute;
       top: 0;
@@ -123,4 +127,12 @@
       border: 0;
       font-size: 1.2em;
       cursor: pointer;
+    }
+
+    .about {
+      white-space: pre-line;
+    }
+
+    .about li {
+      margin-left: 25px;
     }
